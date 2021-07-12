@@ -288,10 +288,10 @@ d3.csv("assets/data/data.csv").then(function(censusData){
 
             yAxis = renderYAxes(yLinearScale, yAxis);
 
-            circlesGroup = renderCircles(circlesGroup, xLinearScale, yLinearScale,chosenXAxis, chosenYAxis);
-            stateTextGroup=renderAbbrs(stateTextGroup, xLinearScale, yLinearScale,chosenXAxis, chosenYAxis);
+            circlesGroup = renderCircles(circlesGroup, xLinearScale, yLinearScale, chosenXAxis, chosenYAxis);
+            stateTextGroup=renderAbbrs(stateTextGroup, xLinearScale, yLinearScale, chosenXAxis, chosenYAxis);
 
-            stateTextGroup = updateToolTip(chosenXAxis,chosenYAxis, stateTextGroup);
+            stateTextGroup = updateToolTip(chosenXAxis, chosenYAxis, stateTextGroup);
 
             // Bold text
             if (chosenYAxis === "obesity") {
